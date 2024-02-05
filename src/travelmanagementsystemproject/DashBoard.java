@@ -223,7 +223,7 @@ public class DashBoard extends JFrame implements ActionListener{
       @Override
     public void actionPerformed(ActionEvent ae){
       if(ae.getSource() == addPersonalDetails){
-          new AddCustomer();
+          new AddCustomer(username);
       }else if(ae.getSource() == viewPersonalDetails){
           new ViewCustomer(username);
       }else if (ae.getSource()== updatePersonalDetails){
